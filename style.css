@@ -1,0 +1,8 @@
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.aside div button:hover:not(button:first-child){
+    background-color: #ddd;
+}

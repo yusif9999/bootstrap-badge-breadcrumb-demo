@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>Support Management Panel</title>
+</head>
+<body class="bg-light">
+    <header class="container-fluid py-4 bg-dark mb-4">
+        <div class="row align-items-center px-2">
+            <div class="col-12 col-md-6">
+                <div class="text-center text-md-start mb-4 mb-md-0">
+                    <h1 class="text-white fs-4 mb-0">
+                        <i class="bi bi-headset fs-3 me-2 text-info"></i>
+                        Support Center
+                    </h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                    <p class="mb-0 text-white me-3">Welcome, Admin</p>
+                    <img src="img/image.jpg" alt="Admin Picture" class="rounded-circle border border-2 border-info">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mb-5">
+        <section class="p-3 alert alert-warning mx-3 mb-4">
+            <p class="mb-0">
+                <i class="bi bi-exclamation-triangle-fill fs-4 me-2"></i> <strong>Announcement:</strong> Scheduled maintenance will be performed on the system tonight between 23:00 - 01:00.
+            </p>
+        </section>
+        <section>
+            <nav>
+                <ul class="list-unstyled d-flex ps-3 breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-decoration-none">Support Panel</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Open Tickets
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="mx-3">
+            <div class="row g-3">
+                <div class="col-3 d-none d-md-block">
+                    <div class="border-2 border-end pe-3">
+                        <h3 class="pb-2 border-bottom fs-4 text-secondary">Quick Menu</h3>
+                        <div class="aside mt-3">
+                            <div class="mb-5">
+                                <button class="btn btn-primary w-100 fw-bold text-start mb-2">
+                                    <i class="bi bi-inbox me-2"></i>
+                                    Open Tickets
+                                </button>
+                                <button class="btn w-100 text-start mb-2">
+                                    <i class="bi bi-check2-circle me-2"></i>
+                                    Resolved Tickets
+                                </button>
+                                <button class="btn w-100 text-start mb-2">
+                                    <i class="bi bi-people me-2"></i>
+                                    Customers
+                                </button>
+                                <button class="btn w-100 text-start">
+                                    <i class="bi bi-bar-chart me-2"></i>
+                                    Reports
+                                </button>
+                            </div>
+                            <div class="bg-white p-3 border rounded-2 shadow-sm">
+                                <p class="small opacity-75">Daily Goal</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-success fw-bold">85% Resolution Rate</span>
+                                    <span>
+                                        <i class="bi bi-graph-up-arrow text-success"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between mb-3 mt-3 mt-md-0">
+                        <h3 class="mb-3 mb-sm-0">Tickets List</h3>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary">All</button>
+                            <button class="btn btn-outline-secondary">Urgent</button>
+                            <button class="btn btn-outline-secondary">Pending</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table border shadow-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="p-3 bg-light">#No</th>
+                                    <th class="p-3 bg-light">Customer & Subject</th>
+                                    <th class="p-3 bg-light d-none d-md-table-cell">Date</th>
+                                    <th class="p-3 bg-light">Status</th>
+                                    <th class="p-3 bg-light text-end">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold align-middle ps-3">TK-101</td>
+                                    <td>
+                                        <p class="mb-0 fw-bold ps-2">Ahmet Y.</p>
+                                        <span class="small opacity-75 ps-2">I cannot log in to the system, it gives an error.</span>
+                                    </td>
+                                    <td class="opacity-75 align-middle d-none d-md-table-cell">September 30, 2026</td>
+                                    <td>
+                                        <span class="badge bg-danger p-2 mt-2 ms-2">Urgent</span>
+                                    </td>
+                                    <td class="text-end pe-3">
+                                        <button class="btn btn-primary btn-sm mt-2">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold align-middle ps-3">TK-102</td>
+                                    <td>
+                                        <p class="mb-0 fw-bold ps-2">Ayşe K.</p>
+                                        <span class="small opacity-75 ps-2">My invoice didn't reach my email address.</span>
+                                    </td>
+                                    <td class="opacity-75 align-middle d-none d-md-table-cell">September 29, 2026</td>
+                                    <td>
+                                        <span class="badge bg-warning p-2 mt-2 ms-2 text-dark">In Progress</span>
+                                    </td>
+                                    <td class="text-end pe-3">
+                                        <button class="btn btn-primary btn-sm mt-2">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold align-middle ps-3">TK-103</td>
+                                    <td>
+                                        <p class="mb-0 fw-bold ps-2">Mehmet D.</p>
+                                        <span class="small opacity-75 ps-2">Membership cancellation request.</span>
+                                    </td>
+                                    <td class="opacity-75 align-middle d-none d-md-table-cell">September 28, 2026</td>
+                                    <td>
+                                        <span class="badge bg-success p-2 mt-2 ms-2 text-white">Resolved</span>
+                                    </td>
+                                    <td class="text-end pe-3">
+                                        <button class="btn btn-secondary btn-sm mt-2" disabled>Closed</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid py-4 bg-white">
+        <p class="mb-0 opacity-75 text-center px-2">© 2026 Support Management Panel. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
